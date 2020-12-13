@@ -29,4 +29,6 @@ app.post("/form", async function(req,res){
         res.redirect("/");
       });
 });
-app.listen(3000);
+app.listen(2000 || process.env.PORT,function(){
+  console.log("serever started on port 3000")
+});
